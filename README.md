@@ -88,6 +88,5 @@ con la empresa.
 Clona el repositorio del proyecto desde GitHub a tu máquina local.
 
 ```bash
-git clone <URL_del_repositorio>
-cd <directorio_del_proyecto>
+git clone https://github.com/IngRRQ/SprintFModulo5.git
 
