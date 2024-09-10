@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+main {
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+#dflexLogOut{
+    min-width: max-content;
+}
+
+.concenter{
+	min-height: 45dvh;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: orange;
+    color: white;
+}
+ .login-container {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+ .headline {
+            background-color: #f8f9fa;
+            
+            text-align: center;
+        }
+.headline h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            padding: 15px 0;
+        }
+ .headline p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }

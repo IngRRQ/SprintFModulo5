@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+         id="WebApp_ID" version="4.0">
+  
+  <display-name>Sprint_M5</display-name>
+
+  <!-- Mapeo del Servlet de Inicio -->
+  <!-- Asegúrate de no tener un servlet anotado con @WebServlet("/inicio") en el código Java -->
+  <servlet>
+      <servlet-name>SvInicio</servlet-name>
+      <servlet-class>controlador.SvInicio</servlet-class> <!-- Asegúrate de usar la clase correcta -->
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>SvInicio</servlet-name>
+      <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Mapeo de recursos estáticos como imágenes y estilos -->
+  <servlet-mapping>
+      <servlet-name>default</servlet-name>
+      <url-pattern>/img/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+      <servlet-name>default</servlet-name>
+      <url-pattern>/css/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+      <servlet-name>default</servlet-name>
+      <url-pattern>/javascript/*</url-pattern>
+  </servlet-mapping>
+
+  <!-- Configuración de archivos de bienvenida -->
+  <welcome-file-list>
+      <welcome-file>inicio.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
